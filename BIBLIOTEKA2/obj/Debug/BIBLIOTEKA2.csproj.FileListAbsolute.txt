@@ -1,0 +1,12 @@
+C:\Users\Mautner\source\repos\BIBLIOTEKA2\BIBLIOTEKA2\bin\Debug\BIBLIOTEKA2.exe.config
+C:\Users\Mautner\source\repos\BIBLIOTEKA2\BIBLIOTEKA2\bin\Debug\BIBLIOTEKA2.exe
+C:\Users\Mautner\source\repos\BIBLIOTEKA2\BIBLIOTEKA2\bin\Debug\BIBLIOTEKA2.pdb
+C:\Users\Mautner\source\repos\BIBLIOTEKA2\BIBLIOTEKA2\obj\Debug\BIBLIOTEKA2.csproj.AssemblyReference.cache
+C:\Users\Mautner\source\repos\BIBLIOTEKA2\BIBLIOTEKA2\obj\Debug\BIBLIOTEKA2.Form1.resources
+C:\Users\Mautner\source\repos\BIBLIOTEKA2\BIBLIOTEKA2\obj\Debug\BIBLIOTEKA2.Properties.Resources.resources
+C:\Users\Mautner\source\repos\BIBLIOTEKA2\BIBLIOTEKA2\obj\Debug\BIBLIOTEKA2.UpravljanjeK.resources
+C:\Users\Mautner\source\repos\BIBLIOTEKA2\BIBLIOTEKA2\obj\Debug\BIBLIOTEKA2.csproj.GenerateResource.cache
+C:\Users\Mautner\source\repos\BIBLIOTEKA2\BIBLIOTEKA2\obj\Debug\BIBLIOTEKA2.csproj.CoreCompileInputs.cache
+C:\Users\Mautner\source\repos\BIBLIOTEKA2\BIBLIOTEKA2\obj\Debug\BIBLIOTEKA2.exe
+C:\Users\Mautner\source\repos\BIBLIOTEKA2\BIBLIOTEKA2\obj\Debug\BIBLIOTEKA2.pdb
+C:\Users\Mautner\source\repos\BIBLIOTEKA2\BIBLIOTEKA2\obj\Debug\BIBLIOTEKA2.PosudbaForm.resources
