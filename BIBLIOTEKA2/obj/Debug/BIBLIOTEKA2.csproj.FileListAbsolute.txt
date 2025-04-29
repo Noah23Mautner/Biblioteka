@@ -10,3 +10,4 @@ C:\Users\Mautner\source\repos\BIBLIOTEKA2\BIBLIOTEKA2\obj\Debug\BIBLIOTEKA2.cspr
 C:\Users\Mautner\source\repos\BIBLIOTEKA2\BIBLIOTEKA2\obj\Debug\BIBLIOTEKA2.exe
 C:\Users\Mautner\source\repos\BIBLIOTEKA2\BIBLIOTEKA2\obj\Debug\BIBLIOTEKA2.pdb
 C:\Users\Mautner\source\repos\BIBLIOTEKA2\BIBLIOTEKA2\obj\Debug\BIBLIOTEKA2.PosudbaForm.resources
+C:\Users\Mautner\source\repos\BIBLIOTEKA2\BIBLIOTEKA2\obj\Debug\BIBLIOTEKA2.PregledForm.resources

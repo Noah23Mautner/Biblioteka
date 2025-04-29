@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfKnjiga xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Knjiga>
+    <Naslov>Kiklop</Naslov>
+    <Autor>Ranko Marinković</Autor>
+    <Godina>1965</Godina>
+    <ISBN>1234564</ISBN>
+    <BrojPrimjeraka>12</BrojPrimjeraka>
+  </Knjiga>
+</ArrayOfKnjiga>

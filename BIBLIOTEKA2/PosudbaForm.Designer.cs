@@ -156,6 +156,7 @@
             this.Controls.Add(this.cmbKorisnici);
             this.Name = "PosudbaForm";
             this.Text = "PosudbaForm";
+            this.Load += new System.EventHandler(this.PosudbaForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPosudbe)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

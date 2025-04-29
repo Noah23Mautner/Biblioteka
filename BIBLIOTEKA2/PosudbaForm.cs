@@ -7,21 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static BIBLIOTEKA2.Models;
 using static BIBLIOTEKA2.PosudbaForm;
 
 namespace BIBLIOTEKA2
 {
     public partial class PosudbaForm : Form
     {
-        public class Posudba
-        {
-            public string Korisnik { get; set; }
-            public string Knjiga { get; set; }
-            public DateTime DatumPosudbe { get; set; }
-            public DateTime? DatumPovrata { get; set; }
-        }
 
         List<Posudba> posudbe = new List<Posudba>();
+        List<Korisnik> korisnici = new List<Korisnik>();
+        List<Knjiga> knjige = new List<Knjiga>();
+
         public PosudbaForm()
         {
             InitializeComponent();
@@ -29,30 +26,59 @@ namespace BIBLIOTEKA2
 
         private void btnPosudi_Click(object sender, EventArgs e)
         {
-            var nova = new Posudba
+            if (cmbKorisnici.SelectedItem is Korisnik korisnik && cmbKnjige.SelectedItem is Knjiga knjiga)
             {
-                Korisnik = cmbKorisnici.SelectedItem.ToString(),
-                Knjiga = cmbKnjige.SelectedItem.ToString(),
-                DatumPosudbe = dtPosudba.Value,
-                DatumPovrata = null
-            };
-            posudbe.Add(nova);
-            osvjeziPosudbe();
+                Posudba nova = new Posudba
+                {
+                    KorisnikIme = korisnik.Ime + " " + korisnik.Prezime,
+                    KnjigaNaslov = knjiga.Naslov,
+                    DatumPosudbe = dtPosudba.Value,
+                    DatumPovrata = dtPovrat.Value
+                };
+
+                posudbe.Add(nova);
+                XmlHelper.SpremiXml(posudbe, "posudbe.xml");
+                OsvjeziGrid();
+            }
+            else
+            {
+                MessageBox.Show("Molimo odaberite korisnika i knjigu.");
+            }
         }
 
         private void btnVrati_Click(object sender, EventArgs e)
         {
-            if (dgvPosudbe.CurrentRow != null)
+            if (dgvPosudbe.SelectedRows.Count > 0)
             {
-                var p = (Posudba)dgvPosudbe.CurrentRow.DataBoundItem;
-                p.DatumPovrata = dtPovrat.Value;
-                osvjeziPosudbe();
+                int index = dgvPosudbe.SelectedRows[0].Index;
+                posudbe.RemoveAt(index);
+                XmlHelper.SpremiXml(posudbe, "posudbe.xml");
+                OsvjeziGrid();
+            }
+            else
+            {
+                MessageBox.Show("Odaberite posudbu za vraćanje.");
             }
         }
-        private void osvjeziPosudbe()
+        private void OsvjeziGrid()
         {
             dgvPosudbe.DataSource = null;
             dgvPosudbe.DataSource = posudbe;
+        }
+
+        private void PosudbaForm_Load(object sender, EventArgs e)
+        {
+            korisnici = XmlHelper.UcitajXml<Korisnik>("korisnici.xml");
+            knjige = XmlHelper.UcitajXml<Knjiga>("knjige.xml");
+            posudbe = XmlHelper.UcitajXml<Posudba>("posudbe.xml");
+
+            cmbKorisnici.DataSource = korisnici;
+            cmbKorisnici.DisplayMember = "Ime";  // možeš promijeniti ako želiš prikazati i prezime
+
+            cmbKnjige.DataSource = knjige;
+            cmbKnjige.DisplayMember = "Naslov";
+
+            OsvjeziGrid();
         }
     }
 }

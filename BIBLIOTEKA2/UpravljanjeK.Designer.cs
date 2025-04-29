@@ -278,6 +278,7 @@
             this.Controls.Add(this.label1);
             this.Name = "UpravljanjeK";
             this.Text = "UpravljanjeK";
+            this.Load += new System.EventHandler(this.UpravljanjeK_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKorisnici)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKnjige)).EndInit();
             this.ResumeLayout(false);

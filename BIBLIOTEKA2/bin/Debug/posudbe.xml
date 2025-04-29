@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfPosudba xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Posudba>
+    <KorisnikIme>Noah Mautner</KorisnikIme>
+    <KnjigaNaslov>Kiklop</KnjigaNaslov>
+    <DatumPosudbe>2025-04-29T18:35:11.6404548+02:00</DatumPosudbe>
+    <DatumPovrata>2025-04-29T18:35:11.6234531+02:00</DatumPovrata>
+  </Posudba>
+</ArrayOfPosudba>

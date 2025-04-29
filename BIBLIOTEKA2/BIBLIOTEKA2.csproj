@@ -52,6 +52,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models.cs" />
     <Compile Include="PosudbaForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,11 +73,15 @@
     <Compile Include="UpravljanjeK.Designer.cs">
       <DependentUpon>UpravljanjeK.cs</DependentUpon>
     </Compile>
+    <Compile Include="XmlHelper.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PosudbaForm.resx">
       <DependentUpon>PosudbaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PregledForm.resx">
+      <DependentUpon>PregledForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
